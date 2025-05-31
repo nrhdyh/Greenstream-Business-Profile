@@ -348,11 +348,34 @@ Inner Header Start
 	display: none;
 }
 
-.inner-header ul li a {
+.inner-header ul li {
 	color: #fff;
 	font-weight: 400;
 	font-size: 24px;
 	text-decoration: none;
+}
+.inner-header a {
+	border: 2px solid #fff;
+	height: 55px;
+	line-height: 51px;
+	padding: 0 50px;
+	color: #fff;
+	display: inline-block;
+	border-radius: 30px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	font-weight: 500;
+	margin-right: 15px;
+	box-shadow: 0 8px 15px rgba(0,0,0,.07);
+}
+.inner-header a.active:hover {
+	background: #fff;
+	color: #6ea53b;
+}
+.inner-header a.active, .slider-caption a:hover {
+	color: #fff;
+	background: #6ea53b;
+	border: 2px solid #6ea53b;
 }
 
 /*********************************
