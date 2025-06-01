@@ -75,7 +75,7 @@
                <h2>GreenStream Chili IoT</h2>
                <p><strong>We’re transforming chili farming through IoT technology to save water, reduce waste, and grow sustainably.</strong></p>
                <p>With real-time monitoring and smart automation, GreenStream helps farmers make efficient, eco-friendly decisions every day.</p>
-               <a href="#contact">Contact Us</a>
+               <a href="contact-two.html">Contact Us</a>
             </div>
          </div>
          <!-- Video/Image Section -->
@@ -259,7 +259,19 @@
                      <input type="text" class="form-control" placeholder="Contact Number" aria-label="Contact">
                   </li>
                   <li>
-                     <input type="submit" class="fsubmit" value="Register Now">
+                     <form onsubmit="redirectToWhatsApp(); return false;">
+  <input type="submit" class="fsubmit" value="Register Now">
+</form>
+
+<script>
+function redirectToWhatsApp() {
+  const phone = "60123456789"; // replace with your number
+  const message = "Hello, I'm interested in registering.";
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
+}
+</script>
+
                   </li>
                </ul>
             </div>
